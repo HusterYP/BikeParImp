@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/pointer_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/point" />
+
+    <TextView
+        android:id="@+id/help_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_toEndOf="@+id/pointer_1"
+        android:text="@string/instructions_1"
+        android:textColor="#FF3030" />
+
+    <ImageView
+        android:id="@+id/pointer_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/point" />
+
+    <TextView
+        android:id="@+id/help_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/pointer_2"
+        android:text="@string/instructions_2"
+        android:textColor="#FF3030" />
+
+
+    <ImageView
+        android:id="@+id/pointer_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/point" />
+
+    <TextView
+        android:id="@+id/help_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/pointer_3"
+        android:text="@string/instructions_3"
+        android:textColor="#FF3030" />
+
+
+    <ImageView
+        android:id="@+id/pointer_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/point" />
+
+    <TextView
+        android:id="@+id/help_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/pointer_3"
+        android:text="@string/instructions_4"
+        android:textColor="#FF3030" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/help_4"/>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient">
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:onClick="getBike"
+        android:text="@string/get"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:id="@+id/get_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get"
+        android:enabled="false"
+        android:onClick="getOver"
+        android:text="@string/get_over"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:id="@+id/put"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_over"
+        android:onClick="putBike"
+        android:text="@string/put"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:id="@+id/put_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/put"
+        android:enabled="false"
+        android:onClick="putOver"
+        android:text="@string/put_over"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:id="@+id/test_get_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/put_over"
+        android:onClick="SQLTest"
+        android:text="查询数据库内容"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:id="@+id/test_clear_sql"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_get_data"
+        android:onClick="clear"
+        android:text="清除数据库数据"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_clear_sql"
+        android:onClick="getPosition"
+        android:text="查询车位"
+        android:textColor="#96CDCD" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@mipmap/question"
+        android:onClick="help" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        fab:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="copyRight"
+            app:fab_icon="@mipmap/copyright"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="aboutMe"
+            app:fab_icon="@mipmap/aboutme"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_size="mini" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

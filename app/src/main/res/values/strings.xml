@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Bike</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">PhoneNumber</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">开始使用</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="pwd">PassWord</string>
+    <string name="get">取车</string>
+    <string name="put">放车</string>
+    <string name="get_over">取车完毕</string>
+    <string name="put_over">放车完毕</string>
+    <string name="help">使用帮助!</string>
+    <string name="instructions_1">
+        使用之前请先确保您的网络畅通!
+    </string>
+    <string name="instructions_2">
+        默认情况下,\"取车完毕\"和\"放车完毕\"选项都不可点击,只有当点击\"取车\"或者\"放车\"选项,同时车位平稳下降完成之后,该两个选项才变为可选!
+    </string>
+    <string name="instructions_3">
+        取车完毕后,请点击\"取车完毕\"选项使车位上升!
+        \n存车完毕后,请点击\"放车完毕\"选项使车位上升!
+    </string>
+    <string name="instructions_4">
+        取车和放车过程中,请耐心等待车位平稳下降完成之后再存取车辆!
+    </string>
+    <string name="check">发送验证码</string>
+    <string name="check_text">请输入验证码</string>
+</resources>
